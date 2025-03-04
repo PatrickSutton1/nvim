@@ -20,4 +20,4 @@ vim.wo.relativenumber = true
 vim.opt.scrolloff = 8
 
 -- Faster cursor speed
-vim.opt.updatetime = 50
+vim.opt.updatetime = 100

@@ -22,11 +22,12 @@ vim.keymap.set("v", "fd", "<Esc>")
 
 -- Copy & Paste from system clipboard
 
-vim.keymap.set("v", "y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>y", "\"+y")
 
 -- Remap Ex command
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+--vim.keymap.set("n", "<leader>ps", vim.cmd.Vex)
 
 -- Append below line to current line
 vim.keymap.set("n", "J", "mzJ`z")
