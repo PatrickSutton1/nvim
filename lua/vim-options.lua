@@ -22,8 +22,8 @@ vim.keymap.set("v", "fd", "<Esc>")
 
 -- Copy & Paste from system clipboard
 
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>y", '"+y')
 
 -- Remap Ex command
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -41,4 +41,9 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Allows paste over without losing original paste
-vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("x", "<leader>p", '"_dP')
+
+-- Autoformatter
+vim.keymap.set("n", "<leader>fm", function()
+	require("conform").format()
+end)
